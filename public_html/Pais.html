@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style-pais.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cadastro de Aluno</title>
+  </head>
+  <body>
+    
+    <div class="main">
+        <div class="container-left">
+            <div class="header">
+                <h1>Cadastrar Aluno</h1>
+            </div>
+
+            <form id="form" class="form">
+                <div class="form-control">
+                    <label for="kidname">Nome da criança</label>
+                    <input
+                        type="text"
+                        id="kidname"
+                        placeholder="Digite o nome da criança..."
+                    />
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>O nome da criança é obrgatório.</small>
+                </div>
+
+                <div class="form-control">
+                    <label for="parentname">Nome do responsável</label>
+                    <input
+                        type="text"
+                        id="parentname"
+                        placeholder="Digite o nome do responsável..."
+                    />
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>O nome de um dos responsáveis é obrigatório.</small>
+                </div>
+
+                <div class="form-control">
+                    <label for="rg">RG</label>
+                    <input type="text" id="rg" placeholder="Digite o RG da criança..." />
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>O RG da criança é obrigatório.</small>
+                </div>
+
+                <div class="form-control">
+                    <label for="endereco">Endereço</label>
+                    <input type="text" id="endereco" placeholder="Digite o endereço..." />
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>O endereço é obrigatório.</small>
+                </div>
+
+                <div class="form-control">
+                    <label for= "creches">Creches disponíveis</label>
+                    <select name="creches">
+                        <option value="CMEI São Francisco">CMEI São Francisco</option>
+                        <option value="CMEI Mundo Feliz">CMEI Nona Luiza</option>
+                        <option value="CMEI Camila">CMEI São Francisco</option>
+                    </select>
+                </div>                
+
+                <div class="form-control">
+                    <label for="anexar">Comprovante de residência</label>
+                    <input type="file" id="file" />
+                </div>
+                
+
+                <button type="submit">Cadastrar</button>
+                
+            </form>
+        </div>
+
+        <div class="container-right">
+            <div class="header">
+                <h1>Visualizar creches</h1>
+            </div>
+            <div>
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7187.618854910672!2d-53.068917199999994!3d-25.74381505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f047eabaf9993f%3A0x8aa871f9c0ce13e2!2sS%C3%A3o%20Francisco%20de%20Assis%2C%20Dois%20Vizinhos%20-%20PR%2C%2085660-000!5e0!3m2!1spt-BR!2sbr!4v1653850680768!5m2!1spt-BR!2sbr"
+                width="600"
+                height="500"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/e8b9c7ab9b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./pais.js"></script>
+  </body>
+</html>

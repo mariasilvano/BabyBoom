@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #4aeefa 0%, #ff7bf4 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .main {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100vw;
+    display: flex;
+  }
+  .container-left {
+    margin-left: 3%;
+    margin-top: 3%;
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 30%;
+    height: 750px;
+    overflow: hidden;
+  }
+
+  .container-right {
+    margin-top: 3%;
+    margin-left: 3%;
+    background-color: #fafafa;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 30%;
+    height: 600px;
+  }
+}
+
+.header {
+  background-color: #eee;
+  padding: 20px;
+}
+
+.form {
+  padding: 20px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  display: block;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px;
+}
+
+.form-control i {
+  position: absolute;
+  top: 45px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.form-control small {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.sucess input {
+  border-color: #2ecc71;
+}
+.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control.sucess i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+.form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+.form-control.error small {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form button {
+  background-color: #ff7bf4;
+  border: 2px solid #ff7bf4;
+  color: #fff;
+  font-size: 14px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 599px) {
+  .header {
+    background-color: #eee;
+    padding: 10px;
+    font-size: 10px;
+  }
+  .main {
+    width: 100vw;
+  }
+  .container-left {
+    margin-left: 4%;
+    margin-top: 5%;
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 85%;
+    overflow: hidden;
+  }
+
+  .container-right {
+    margin-top: 4%;
+    margin-left: 5%;
+    background-color: #fafafa;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 85%;
+  }
+}
