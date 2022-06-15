@@ -3,6 +3,7 @@ const kidname = document.getElementById("kidname");
 const parentname = document.getElementById("parentname");
 const rg = document.getElementById("rg");
 const endereco = document.getElementById("endereco");
+const creche = document.getElementById("creche");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();

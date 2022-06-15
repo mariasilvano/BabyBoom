@@ -1,34 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-Login.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style-Login.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
     <title>BabyBoom</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="main-login">
-        <div class = "left-login">
-            <h1> Faça login </h1>
-            <img src="baby.svg" class ="left-login-img" alt ="Baby animação">
+      <div class="left-login">
+        <h1>Faça login</h1>
+        <img src="baby.svg" class="left-login-img" alt="Baby animação" />
+      </div>
+      <div class="right-login">
+        <div class="card-login">
+          <h1>LOGIN</h1>
+          <div class="textfield">
+            <label for="usuario"> Usuário </label>
+            <input type="text" id="usuario" placeholder="Usuário" />
+          </div>
+          <div class="textfield">
+            <label for="senha"> Senha </label>
+            <input type="password" id="senha" placeholder="Senha" />
+          </div>
+          <button class="button-login" onclick="validaLogin()">Login</button>
         </div>
-        <div class = "right-login">
-            <div class = "card-login">
-                <h1> LOGIN </h1>
-                <div class = "textfield">
-                    <label for ="usuario"> Usuário </label>
-                    <input type="text" name ="usuario" placeholder="Usuário">
-                </div>  
-                <div class = "textfield">
-                    <label for ="senha"> Senha </label>
-                    <input type="password" name ="senha" placeholder="Senha">
-                </div> 
-                <a href="http://127.0.0.1:5500/Administrador.html">
-                    <button class="button-login"> Login </button> 
-                </a>
-            </div>
-        </div>
-    </div>        
-</body>
+      </div>
+    </div>
+  </body>
+
+  <script type="text/javascript">
+    function validaLogin() {
+      var usuario = document.getElementById("usuario");
+      var usuariovalue = usuario.value;
+      var senha = document.getElementById("senha");
+      var senhavalue = senha.value;
+
+      alert("user:" + usuariovalue);
+      alert("senha:" + senhavalue);
+      if (usuariovalue == "pai" && senhavalue == "123") {
+        window.location.href = "http://127.0.0.1:5500/Pais.html";
+      } else if (usuariovalue == "adm" && senhavalue == "123") {
+        window.location.href = "http://127.0.0.1:5500/Administrador.html";
+      } else if (usuariovalue == "diretor" && senhavalue == "123") {
+        window.location.href = "http://127.0.0.1:5500/Diretor.html";
+      } else {
+        window.location.href = "http://127.0.0.1:5500/login.html";
+      }
+    }
+  </script>
 </html>
