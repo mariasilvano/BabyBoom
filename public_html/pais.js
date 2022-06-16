@@ -41,8 +41,13 @@ function checkInputs() {
   const formControls = form.querySelectorAll(".form-control");
 
   const formIsValid = [...formControls].every((formControl) => {
-    return formControl.className === "form-control success";
+    return formControl.className === "form-control sucess";
   });
+
+  if (formIsValid) {
+    alert("válido");
+    document.getElementById("");
+  }
 }
 
 function setErrorFor(input, message) {
