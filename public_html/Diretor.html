@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style-diretor.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cadastro de Vagas</title>
+  </head>
+  <body onload="CriarCampos()">
+    <div class="main">
+      <div class="container-left">
+        <div class="header">
+          <h1>Selecione a creche</h1>
+        </div>
+
+        <form id="form" class="form">
+          <select name="creches" id="creche">
+            <option value="CMEI São Francisco de Assis">
+              CMEI São Francisco de Assis
+            </option>
+            <option value="CMEI Nona Luiza">CMEI Nona Luiza</option>
+            <option value="CMEI Camila">CMEI Camila</option>
+          </select>
+          <div id="inserir"></div>
+        </form>
+      </div>
+    </div>
+    <script src="./Diretor.js"></script>
+  </body>
+</html>
