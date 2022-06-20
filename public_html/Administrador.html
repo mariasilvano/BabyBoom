@@ -8,6 +8,31 @@
     <title>BabyBoom</title>
   </head>
   <body>
+    <header id="header">
+      <img src="baby.svg" class="imglogo" alt="Baby animação" />
+      <nav id="nav">
+        <button
+          aria-label="Abrir Menu"
+          id="btn-mobile"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          Menu
+          <span id="hamburger"></span>
+        </button>
+        <ul id="menu" role="menu">
+          <li>
+            <a href="http://127.0.0.1:5500/CadastroBairro.html"
+              >Cadastrar Bairro
+            </a>
+          </li>
+          <li><a href="/">Validar Localização</a></li>
+          <li><a href="/">Consultar Relatórios</a></li>
+        </ul>
+      </nav>
+    </header>
+    <script src="./script.js"></script>
     <div class="main-adm">
       <div class="card">
         <div class="img">
@@ -49,4 +74,5 @@
       window.location.href = "http://127.0.0.1:5500/CadastroBairro.html";
     }
   </script>
+  <script src="./adm.js"></script>
 </html>

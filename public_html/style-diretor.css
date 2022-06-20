@@ -34,28 +34,14 @@ body {
     height: 300px;
     overflow: hidden;
   }
-
-  .container-right {
-    margin-top: 3%;
-    margin-left: 3%;
-    background-color: #fafafa;
-    border-radius: 10px;
-    overflow: hidden;
-    width: 30%;
-    height: 300px;
-    visibility: hidden;
-  }
 }
 
 .header {
-  background-color: #eee;
+  background-color: #fafafa;
   padding: 20px;
 }
 
 .form {
-  padding: 20px;
-}
-.form2 {
   padding: 20px;
 }
 
@@ -65,11 +51,6 @@ body {
   position: relative;
 }
 
-.form-control2 {
-  margin-bottom: 10px;
-  padding-bottom: 20px;
-  position: relative;
-}
 .form-control label {
   display: inline-block;
   margin-bottom: 5px;
@@ -150,92 +131,7 @@ body {
   background-color: #ff7bf4;
   border: 2px solid #ff7bf4;
   color: #fff;
-  font-size: 14px;
-  width: 100%;
-  border-radius: 10px;
-  padding: 10px;
-  cursor: pointer;
-}
-.form-control2 label {
-  display: inline-block;
-  margin-bottom: 5px;
-}
-
-.form-control2 input {
-  border: 2px solid #f0f0f0;
-  display: block;
-  border-radius: 10px;
-  font-size: 14px;
-  width: 100%;
-  padding: 10px;
-}
-
-.form-control2 i {
-  position: absolute;
-  top: 45px;
-  right: 10px;
-  visibility: hidden;
-}
-
-.form-control2 small {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  visibility: hidden;
-}
-
-.form-control2 label {
-  display: inline-block;
-  margin-bottom: 5px;
-}
-
-.form-control2 input {
-  border: 2px solid #f0f0f0;
-  display: block;
-  border-radius: 10px;
-  font-size: 14px;
-  width: 100%;
-  padding: 10px;
-}
-
-.form-control2 i {
-  position: absolute;
-  top: 45px;
-  right: 10px;
-  visibility: hidden;
-}
-
-.form-control2 small {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  visibility: hidden;
-}
-
-.form-control2.sucess input {
-  border-color: #2ecc71;
-}
-.form-control2.error input {
-  border-color: #e74c3c;
-}
-
-.form-control2.sucess i.fa-check-circle {
-  color: #2ecc71;
-  visibility: visible;
-}
-.form-control2.error i.fa-exclamation-circle {
-  color: #e74c3c;
-  visibility: visible;
-}
-.form-control2.error small {
-  color: #e74c3c;
-  visibility: visible;
-}
-
-.form2 button {
-  background-color: #ff7bf4;
-  border: 2px solid #ff7bf4;
-  color: #fff;
+  margin-top: 30px;
   font-size: 14px;
   width: 100%;
   border-radius: 10px;

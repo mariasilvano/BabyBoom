@@ -17,10 +17,11 @@
     <div class="main">
       <div class="container-left">
         <div class="header">
-          <h1>Selecione a creche</h1>
+          <h1>Cadastre as vagas</h1>
         </div>
 
         <form id="form" class="form">
+          <label> Selecione a creche:</label>
           <select name="creches" id="creche">
             <option value="CMEI São Francisco de Assis">
               CMEI São Francisco de Assis
@@ -28,7 +29,18 @@
             <option value="CMEI Nona Luiza">CMEI Nona Luiza</option>
             <option value="CMEI Camila">CMEI Camila</option>
           </select>
+          <label> Selecione a turma:</label>
+          <select name="Turmas" id="Turmas">
+            <option value="Berçario">Berçario</option>
+            <option value="Maternal I">Maternal I</option>
+            <option value="Maternal II">Maternal II</option>
+            <option value="Maternal III">Maternal III</option>
+            <option value="Pré I">Pré I</option>
+            <option value="Pré II">Pré II</option>
+            <option value="Pré III">Pré III</option>
+          </select>
           <div id="inserir"></div>
+          <button type="submit">Cadastrar</button>
         </form>
       </div>
     </div>
